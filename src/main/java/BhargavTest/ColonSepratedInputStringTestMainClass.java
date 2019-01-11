@@ -1,4 +1,4 @@
-package mapReduce;
+package main.java.BhargavTest;
 
 import java.util.List;
 

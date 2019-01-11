@@ -1,4 +1,4 @@
-package mapReduce;
+package main.java.BhargavTest;
 
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.OptionDef;
