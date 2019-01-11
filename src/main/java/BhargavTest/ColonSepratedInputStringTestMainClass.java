@@ -11,14 +11,13 @@ public class ColonSepratedInputStringTestMainClass {
 	@Option(name = "-pgList", required = false, handler = ProperStringArrayOptionHandler.class, usage = "List of Processing Groups seperated by commas Ex: TP,MIA,BOS")
 	public static List<String> pgList;
 	
-	@Option(name = "-zkq", required = true, usage = "Zookeeper Quorum.")
+	@Option(name = "-zkq", required = true, usage = "Zookeeper Quorum name")
 	public static String zkq = "";
 	
-	@Option(name = "-jt", required = true, usage = "Set Job Tracker example: -jt dayrhep020.enterprisenet.org:8021")
+	@Option(name = "-jt", required = true, usage = "Job Tracker name")
 	private static String jobTracker = "";
 
 	public static void main(String[] args) throws CmdLineException {
-		// TODO Auto-generated method stub
 		ColonSepratedInputStringTestMainClass testMain = new ColonSepratedInputStringTestMainClass();
 		CmdLineParser parser = new CmdLineParser(testMain);
 		parser.parseArgument(args);
